@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="fg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff7b54"/>
+      <stop offset="100%" stop-color="#ffb86b"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#09203f"/>
+  <circle cx="32" cy="24" r="14" fill="url(#fg)" />
+  <text x="32" y="28" font-family="Arial" font-size="12" text-anchor="middle" fill="#082032" font-weight="700">OF</text>
+</svg>

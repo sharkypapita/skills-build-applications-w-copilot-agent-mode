@@ -1,0 +1,115 @@
+.app-container {
+  padding-top: 1rem;
+}
+
+.brand-logo {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.main-card {
+  margin-top: 1rem;
+}
+
+.table-json {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 420px;
+}
+
+.modal-backdrop-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1040;
+}
+
+.modal-custom {
+  z-index: 1050;
+}
+
+.actions-col button {
+  margin-right: 0.5rem;
+}
+
+/* Color theme */
+:root {
+  --background-start: #0f172a; /* dark navy */
+  --background-end: #09203f; /* deep blue */
+  --card-bg: rgba(255,255,255,0.03);
+  --accent: #ff7b54; /* warm accent */
+  --muted: #94a3b8;
+  --table-header: rgba(255,255,255,0.06);
+  --link-color: #7ad0ff;
+  --button-bg: #0ea5a4; /* teal */
+  --button-border: #07b8b5;
+}
+
+body {
+  background: linear-gradient(120deg, var(--background-start), var(--background-end));
+  color: #e6eef8;
+}
+
+.navbar.bg-primary {
+  background: linear-gradient(90deg, rgba(3,105,161,0.95), rgba(12,74,110,0.95));
+}
+
+.navbar .brand-logo {
+  color: white;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.card .card-title, h1, h2, h3 {
+  color: var(--accent);
+}
+
+.table thead th {
+  background: var(--table-header);
+  color: #eaf6ff;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(255,255,255,0.01);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(255,123,84,0.06);
+}
+
+.btn-primary, .btn-primary:focus, .btn-primary:active {
+  background: linear-gradient(90deg, var(--button-bg), #06b2b0);
+  border-color: var(--button-border);
+}
+
+a, .nav-link {
+  color: var(--link-color);
+}
+
+.nav-link:hover {
+  color: #aef1ff;
+}
+
+.table-json {
+  color: var(--muted);
+}
+
+.brand-image {
+  height: 36px;
+  width: auto;
+  margin-right: 0.75rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
