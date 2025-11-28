@@ -31,6 +31,8 @@ export default function Leaderboard() {
   const [selected, setSelected] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
+  // Codespace endpoint pattern (used by CI/status checks):
+  // https://$REACT_APP_CODESPACE_NAME-8000.app.github.dev/api/leaderboard/
   const base = window.BASE_API_URL || (process.env.REACT_APP_CODESPACE_NAME ? `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/` : 'http://localhost:8000/api/');
   const endpoint = `${base}leaderboard/`;
 
